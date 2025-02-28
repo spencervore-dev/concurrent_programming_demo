@@ -37,7 +37,7 @@ def get_price():
         print(f"{symbol}: ${price}")
 
         # slow down API calls a bit
-        time.sleep(1)
+        time.sleep(1.5)
 
     return
 
@@ -48,11 +48,12 @@ def main():
     for _ in range(thread_count):
         thread_list.append(Thread(target=get_price))
 
-    get_stock_symbols()
-
     print(thread_list)
     for i in range(thread_count):
         thread_list[i].start()
+
+    get_stock_symbols()
+
     for i in range(thread_count):
         thread_list[i].join()
 

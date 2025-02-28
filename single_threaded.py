@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-from pprint import pprint
 import time
 import yfinance as yf
 
@@ -24,11 +23,11 @@ def get_price(symbol):
     # this so switching to library that packages this logic for me.
     data = yf.Ticker(symbol)
     price = data.info.get('currentPrice')
-    print(f"{symbol}: ${price}")  
+    print(f"{symbol}: ${price}")
 
     # slow down API calls a bit
-    time.sleep(2)
-     
+    time.sleep(1)
+
 
 def main():
     tik = time.perf_counter()

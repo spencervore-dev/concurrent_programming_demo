@@ -9,6 +9,3 @@ I wanted to get some hands on experience with some of the basic Python multithre
 This code was run using Python 3.12. Then pip install -r requirements.txt.  
 
 NOTE: The code in this example is soley inspired by the Udemy training course and doesn't contain any confidential information or anything work related.  
-
-
-
