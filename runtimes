@@ -1,8 +1,0 @@
-Single thread (single_thread.py)
-Feb 24, 4:15pm - 624.6 secs
-Feb 24, 4:25pm - 624.1 secs
-Feb 28, 3:59pm - 656.8 secs
-
-Multi thread (threading_lib.py)
-Feb 28, 4:05pm - 307.3 secs
-Feb 28, 4:11pm - 305.5 secs
