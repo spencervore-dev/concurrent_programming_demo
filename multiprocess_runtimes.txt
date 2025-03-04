@@ -1,0 +1,9 @@
+Single Core
+45 secs
+45 secs
+45 secs
+
+Multi Core
+17 secs
+17 secs
+17 secs
