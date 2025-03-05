@@ -1,0 +1,9 @@
+Single Threaded
+Mar 5, 4:24pm - 556.26 secs
+Mar 5, 4:25pm - 546.83 secs
+Mar 5, 4:56pm - 553.47 secs
+
+Async Threaded
+Mar 5, 4:38 - 30.00 secs
+Mar 5, 4:44pm - 31.55 secs
+Mar 5, 4:57pm - 29.85 secs
