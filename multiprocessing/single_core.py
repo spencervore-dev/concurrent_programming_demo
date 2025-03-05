@@ -1,12 +1,15 @@
+# Single core (also single thread) version of a silly computationally expensive process.
+
 import time
 
 # SETTINGS
 LIST_SIZE = 10**6 - 1
 ITER_COUNT = 10**3
 
+
 def computationally_expensive_function(
-        input: list[int | float],
-        iterations: int = ITER_COUNT):
+    input: list[int | float], iterations: int = ITER_COUNT
+):
     """
     Computationally expensive process for testing multi core improvement
     """
@@ -45,7 +48,7 @@ def main_process():
     print(out[-10:])
 
     print("\n\n----------")
-    print(f"\nTotal Runtime (secs): {round(tok - tik, 2)}")
+    print(f"TOTAL RUNTIME (secs): {round(tok-tik, 2)}")
 
     return out
 
