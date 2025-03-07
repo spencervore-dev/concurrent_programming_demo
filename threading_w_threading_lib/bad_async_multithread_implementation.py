@@ -27,13 +27,15 @@ async def get_price(symbol):
     # We will use yfinance library, unlike in demo. Yahoo finance is set up to return a 423
     # too many requests error when trying to just do a simple requests.get(). Don't know how to get around
     # this so switching to library that packages this logic for me.
-    # 
+    #
     # Also tried data = await asyncio.to_thread(yf.Ticker, symbol)
     # This "worked", but also did not improve the process runtime. Trying to thread a non
     # asyncio compatible function like this may not always be effective. In this case, it wasn't.
     # The Threading lib is probably more effective for running non asyncio compatible python functions
     # concurrently.
-    data = yf.Ticker(symbol)  # Ticker can't be made as an await, so this doesn't really help the asyncio process
+    data = yf.Ticker(
+        symbol
+    )  # Ticker can't be made as an await, so this doesn't really help the asyncio process
     price = data.info.get("currentPrice")
     print(f"{symbol}: ${price}")
 
