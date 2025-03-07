@@ -17,8 +17,9 @@ NOTE: The code in this example is solely inspired by the Udemy training course a
 - multiprocessing directory - Contains multi-core example
     - single_core.py - Single core (single thread) version of a simple compute heavy program. This file was then copied to make the multi-core version.
     - multi_core.py - Multicore version using multiprocessing.Process()
-    - compare_outputs.py - Runs both the single core, then the multi core version, and compares the final result is exactly the same. Shows that the multicore version isn't changing the computation.
-    - multiprocess_runtimes.txt - Recorded the final runtime to compare the two scripts to show performance improvement.
+    - multi_core_w_pool - Simplified example of multi_core using Pool(). Way less code, and even better runtime performance!
+    - compare_outputs.py - Runs the single core, then the multi core versions. Compare all the final results to prove they're exactly the same. Shows that the multicore versions aren't changing the computation.
+    - multiprocess_runtimes.txt - Recorded the final runtime to compare the three scripts to show performance improvement.
 
 - threading_w_asyncio - An example of a stock price web scraper (scrapes prices from google finance). This shows how to multi-thread it using asyncio and aiohttp
     - single_threaded_async.py - Single threaded version of the stock price web scraper. This file was then copied to create the multi-thread version.
