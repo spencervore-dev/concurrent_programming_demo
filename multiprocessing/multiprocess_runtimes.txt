@@ -7,3 +7,7 @@ Multi Core
 17 secs
 17 secs
 17 secs
+
+Multi Core w Pool
+9.16 secs
+8.94 secs
